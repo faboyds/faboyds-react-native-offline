@@ -15,6 +15,9 @@ export default function getSimilarActionInQueue(
     return actionQueue.find((queued: *) => isEqual(queued, action));
   }
   if (typeof action === 'function') {
+    
+    if (action.meta.multiple) return undefined;
+    
     return actionQueue.find(
       (queued: *) => action.toString() === queued.toString(),
     );
