@@ -19,7 +19,7 @@ export default function getSimilarActionInQueue(
     if (action.meta.multiple) return undefined;
     
     return actionQueue.find(
-      (queued: *) => action.toString() === queued.toString(),
+      (queued: *) => (queued && action.toString() === queued.toString()),
     );
   }
   return undefined;
