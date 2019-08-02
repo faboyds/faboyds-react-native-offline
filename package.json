@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/faboyds/react-native-offline.git"
+    "url": "git+https://github.com/faboyds/faboyds-react-native-offline.git"
   },
   "keywords": [
     "react-native",
